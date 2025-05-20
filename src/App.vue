@@ -1,9 +1,17 @@
 <template>
-  <h1>Текущая дата - {{ date }}</h1>
+  <main class="main">
+    <Button>Сохранить</Button>
+  </main>
 </template>
 
 <script setup>
-const date = new Date();
+import Button from "./components/Button.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+.main {
+  background-color: var(--color-bg-main);
+  padding: 60px 50px;
+  border-radius: 25px;
+}
+</style>
