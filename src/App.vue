@@ -1,9 +1,11 @@
 <template>
-  <h1>Текущая дата - {{ date }}</h1>
+  <main class="main">
+    <Button>Начать игру</Button>
+  </main>
 </template>
 
 <script setup>
-const date = new Date();
+import Button from "./components/Button.vue";
 </script>
 
 <style scoped></style>
